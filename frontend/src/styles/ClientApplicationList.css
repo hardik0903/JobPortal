@@ -1,0 +1,51 @@
+.client-application {
+    width: 100%;
+    margin: 20px;
+}
+
+.client-application h1 {
+    text-align: center;
+}
+
+.client-application ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.client-application li {
+    list-style: none;
+    padding: 10px;
+}
+
+.client-application li h2 {
+    text-align: center;
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+    .client-application ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .client-application {
+        flex: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .client-application ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .client-application {
+        flex: 60%;
+    }
+}
+
+.client-application li:nth-child(odd) {
+    background-image: url('../resources/background1.png');
+}
+  
+.client-application li:nth-child(even) {
+    background-image: url('../resources/background2.png');
+}

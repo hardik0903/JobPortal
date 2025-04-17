@@ -1,0 +1,161 @@
+.admin-client-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.admin-client-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.admin-client-container button {
+    background-color: transparent;
+    font-family: 'Noticia Text', serif;
+    border: 0px;
+    border-bottom: 1px solid transparent;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    color: black;
+}
+    
+.admin-client-container button:hover {
+    border-bottom: 1px solid black;
+}
+
+.admin-client-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    flex-grow: auto;
+    padding: 20px;
+}
+
+.admin-client-container h2 {
+    text-align: center;
+}
+  
+.admin-client-container label {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+    display: block; 
+}
+  
+.admin-client-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    font: 14px 'Noticia Text', serif;
+    color: black;
+}
+  
+.admin-client-container input:-webkit-autofill,
+.admin-client-container textarea:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: black !important; /* Change text color if needed */
+}
+.admin-client-container input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Ensure the calendar icon is visible */
+}
+  
+.admin-client-container button[type="submit"] {
+    background-color: transparent;
+    font-family: 'Noticia Text', serif;
+    border: 0px;
+    border-bottom: 1px solid transparent;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+}
+  
+.admin-client-container button[type="submit"]:hover {
+    border-bottom: 1px solid black;
+}
+  
+.admin-client-submit-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.admin-add-client {
+    background-image: url("../resources/background1.png");
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-clients-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin: 20px;
+}
+  
+@media (max-width: 1200px) {
+    .list-clients-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+  
+@media (max-width: 768px) {
+    .list-clients-container {
+      grid-template-columns: 1fr;
+    }
+}
+
+.list-clients-background.large {
+    grid-row: span 3;
+}
+  
+.list-clients-background:nth-child(odd) {
+    background-image: url('../resources/background1.png');
+}
+  
+.list-clients-background:nth-child(even) {
+    background-image: url('../resources/background2.png');
+}
+
+.list-clients-background {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+}
+
+.client-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}

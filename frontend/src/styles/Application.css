@@ -1,0 +1,64 @@
+.application {
+    margin-bottom: 20px;
+}
+
+.application form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  flex-grow: auto;
+}
+
+.application label {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 5px;
+  display: block; 
+}
+
+.application input[type="text"],
+.application input[type="email"],
+.application textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  background-color: transparent;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+  font: 14px 'Noticia Text', serif;
+}
+
+.application input:-webkit-autofill,
+.application textarea:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #000 !important; /* Change text color if needed */
+}
+
+.application textarea {
+  border: 1px solid #000000;
+  padding: 10px;
+  margin-bottom: -20px;
+}
+
+.application button[type="submit"] {
+  padding: -10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.application button[type="submit"]:hover {
+  border-bottom: 1px solid black;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

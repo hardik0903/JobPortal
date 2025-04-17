@@ -1,0 +1,110 @@
+.client-edit {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px;
+  box-sizing: border-box;
+  gap: 30px;
+  align-items: center;
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+  .client-edit {
+      flex: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .client-edit {
+      flex: 30%;
+  }
+}
+
+.client-edit form {
+display: flex;
+flex-direction: column;
+width: 100%;
+max-width: 600px;
+flex-grow: auto;
+padding: 20px
+}
+
+.client-edit label {
+font-size: 12px;
+text-align: center;
+margin-bottom: 5px;
+display: block; 
+}
+
+.client-edit input[type="date"],
+.client-edit input[type="tel"],
+.client-edit input[type="text"],
+.client-edit input[type="password"],
+.client-edit input[type="email"] {
+width: 100%;
+padding: 10px;
+border: none;
+border-bottom: 1px solid #000000;
+background-color: transparent;
+font-size: 16px;
+outline: none;
+text-align: center;
+font: 14px 'Noticia Text', serif;
+color: black;
+}
+
+.client-edit input:-webkit-autofill,
+.client-edit textarea:-webkit-autofill {
+background-color: transparent !important;
+-webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+box-shadow: 0 0 0 1000px transparent inset !important;
+-webkit-text-fill-color: black !important; /* Change text color if needed */
+}
+
+.client-edit input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Ensure the calendar icon is visible */
+}
+
+.client-edit button[type="submit"] {
+background-color: transparent;
+font-family: 'Noticia Text', serif;
+border: 0px;
+border-bottom: 1px solid transparent;
+margin: 0 5px;
+cursor: pointer;
+font-size: 16px; 
+color: black;
+font-weight: bold;
+margin-top: 20px;
+}
+
+.client-edit button[type="submit"]:hover {
+border-bottom: 1px solid black;
+}
+
+.clientedit-submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.client-edit h2 {
+text-align: center;;
+}
+
+.client-edit input[type=date]::-webkit-datetime-edit {
+  display: none;
+}
+
+.update-data {
+  background-image: url('../resources/background1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.change-password {
+  background-image: url('../resources/background2.png');
+  background-size: cover;
+  background-position: center;
+}

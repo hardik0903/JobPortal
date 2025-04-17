@@ -1,0 +1,62 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px; 
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-image: url("../resources/bigbackground.png");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 600px) {
+  .login-container {
+      max-width: 100%;
+  }
+}
+
+.login-redline {
+  height: 6px;
+  background-color: rgb(208, 8, 8);
+  margin-top: 7px;
+  margin-bottom: 3px;
+  width: 100%;
+}
+
+.login-icon {
+  width: 70%;
+}
+
+.car-icon {
+  width: 40%;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208, 8, 8);
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.buttons-container button {
+  background-color: transparent;
+  font-family: 'Noticia Text', serif;
+  border: 0px;
+  border-bottom: 1px solid transparent;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px; 
+  color: white;
+}
+
+.buttons-container button:hover {
+  border-bottom: 1px solid white;
+}

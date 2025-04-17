@@ -1,0 +1,66 @@
+.signin-form {
+    margin: 20px;
+}
+
+.signin-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  flex-grow: auto;
+}
+
+.signin-form label {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 5px;
+  display: block; 
+}
+
+.signin-form input[type="password"],
+.signin-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  background-color: transparent;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+  font: 14px 'Noticia Text', serif;
+}
+
+.signin-form input:-webkit-autofill,
+.signin-form textarea:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #000 !important; /* Change text color if needed */
+}
+
+.signin-form button[type="submit"] {
+  background-color: transparent;
+  font-family: 'Noticia Text', serif;
+  border: 0px;
+  border-bottom: 1px solid transparent;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px; 
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.signin-form button[type="submit"]:hover {
+  border-bottom: 1px solid black;
+}
+
+.login-submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-form h2 {
+  text-align: center;
+}

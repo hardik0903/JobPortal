@@ -1,0 +1,73 @@
+header {
+  position: relative; /* Ensures sticky positioning works */
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+header img {
+  width: 500px;
+  height: auto;
+  margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+  header img {
+    width: 80%
+  }
+}
+
+.red-line {
+  height: 6px;
+  background-color: rgb(208, 8, 8);
+  margin-top: 7px;
+  width: 100%;
+  top: 0;
+}
+
+.navigation-buttons {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(208, 8, 8);
+}
+
+.navigation-buttons.logged-in {
+  justify-content: space-between;
+}
+
+.navigation-buttons.logged-out {
+  justify-content: end;
+}
+
+.navigation-buttons button {
+  background-color: transparent;
+  color: white;
+  font-family: "Noticia Text", serif;
+  border: 0px;
+  border-bottom: 1px solid transparent;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+header span {
+  font-size: 13px;
+  color: white;
+  margin: 0 5px;
+  font-family: "Noticia Text", serif;
+  border: 0px;
+  border-bottom: 1px solid transparent;
+}
+
+.navigation-buttons button:hover {
+  border-bottom: 1px solid white;
+}

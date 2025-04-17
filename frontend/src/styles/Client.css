@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+.client-page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}

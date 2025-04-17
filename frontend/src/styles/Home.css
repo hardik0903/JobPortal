@@ -1,0 +1,25 @@
+.container_advertisements {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin: 20px;
+}
+
+@media (max-width: 1200px) {
+  .container_advertisements {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container_advertisements {
+    grid-template-columns: 1fr;
+  }
+}
+
+.no-ads-msg {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin: 2rem 0;
+}
